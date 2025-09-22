@@ -4,8 +4,8 @@ import asyncio
 import traceback
 
 server_params = StdioServerParameters(
-    command="uv",
-    args=["--directory", "D:\\mcp -project", "run", "server.py"],
+    command="npx",
+    args=["mcp-remote","http://127.0.0.1:8000/mcp", "--allow-http"],
 )
 
 async def run():
@@ -23,18 +23,18 @@ async def run():
                 tools = await session.list_tools()
                 print("Available tools:", tools)
 
-                # print("Calling tool...")
-                # result = await session.call_tool("get_weather", arguments={"location": "San Francisco"})
-                # print("Tool result:", result)
+                print("Calling tool...")
+                result = await session.call_tool("get_weather", arguments={"location": "San Francisco"})
+                print("Tool result:", result)
 
 
-                # print("Listing resources...")
-                # resources = await session.list_resources()
-                # print("Available resources:", resources)
+                print("Listing resources...")
+                resources = await session.list_resources()
+                print("Available resources:", resources)
 
-                # print("Listing resources templates...")
-                # resources = await session.list_resource_templates()
-                # print("Available resource templates:", resources)
+                print("Listing resources templates...")
+                resources = await session.list_resource_templates()
+                print("Available resource templates:", resources)
 
                 # print("Getting resource")
                 # resource = await session.read_resource("weather://statement")
