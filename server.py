@@ -1,6 +1,9 @@
 from mcp.server.fastmcp import FastMCP
 import os, json
 import difflib
+import requests
+from bs4 import BeautifulSoup
+from serpapi import GoogleSearch
 
 storage_path="memory_store"
 storage_path = storage_path
@@ -19,6 +22,33 @@ def save_memory(key: str, value: str):
         _save()
         return f"Memory saved: {key} -> {value}"
 
+
+SERPAPI_API_KEY = ""
+
+def search_web(query: str) -> str:
+    if not SERPAPI_API_KEY:
+        return "SEARCH_API_KEY not set in .env"
+
+    params = {
+        "q": query,
+        "api_key": SERPAPI_API_KEY,
+        "engine": "google",
+        "num": 1
+    }
+
+    try:
+        search1 = GoogleSearch(params)
+        results = search1.get_dict() 
+        organic = results.get("organic_results")
+        if organic and len(organic) > 0:
+            snippet = organic[0].get("snippet")
+            if snippet:
+                return snippet
+        return "No results found from web."
+    except Exception as e:
+        return f"Could not fetch from web: {e}"
+    
+
 @mcp.tool(description="Retrieve a value from memory by key, with fuzzy matching")
 def get_memory(key: str):
           if key in data:
@@ -28,7 +58,9 @@ def get_memory(key: str):
                 best_match = matches[0]
                 return f"Did you mean '{best_match}'? -> {data[best_match]}"
             
-          return f"No memory found similar to: '{key}'"
+          result = search_web(key)
+          save_memory(key, result)
+          return f"Web search result for '{key}' -> {result}"
 
 def _save():
         with open(file, "w") as f:
