@@ -11,7 +11,6 @@ if os.path.exists(file):
 else:
        data = {}
 
-
 mcp = FastMCP(name="MemoryMCP")
 
 @mcp.tool(description="Save a key-value pair to memory")
