@@ -24,7 +24,7 @@ def save_memory(key: str, value: str):
         return f"Memory saved: {key} -> {value}"
 
 
-SERPAPI_API_KEY = "f37b84c652cd1ce7854120382d33610d5d37f30a7cb757b47d1de8ddd7fd60f4"
+SERPAPI_API_KEY = "f"
 
 def search_web(query: str) -> str:
     if not SERPAPI_API_KEY:
