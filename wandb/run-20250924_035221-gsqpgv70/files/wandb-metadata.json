@@ -1,0 +1,38 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.11.8",
+  "startedAt": "2025-09-23T22:22:21.493581Z",
+  "program": "D:\\BTM project\\model.py",
+  "codePath": "model.py",
+  "email": "nikhil4040k@gmail.com",
+  "root": "D:\\BTM project",
+  "host": "NikhilKumar",
+  "executable": "c:\\Users\\Nikhal Kumar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "codePathLocal": "model.py",
+  "cpu_count": 12,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "496887656448",
+      "used": "212364214272"
+    }
+  },
+  "memory": {
+    "total": "16831729664"
+  },
+  "cpu": {
+    "count": 12,
+    "countLogical": 16
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "memoryTotal": "4294967296",
+      "cudaCores": 2048,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.9"
+}

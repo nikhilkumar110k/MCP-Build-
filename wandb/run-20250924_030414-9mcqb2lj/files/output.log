@@ -1,0 +1,32 @@
+  0%|                                                                                                                                | 0/37500 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+ 41%|███████████████████████████████████████████████▏                                                                    | 15259/37500 [44:01<45:09,  8.21it/s]
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.04}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.08}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.12}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.16}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.2}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.24}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.28}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.32}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.36}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.4}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.44}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.48}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.52}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.56}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.6}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.64}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.68}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.72}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.76}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.8}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.84}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.88}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.92}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.96}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 1.0}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 1.04}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 1.08}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 1.12}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 1.16}
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 1.2}
