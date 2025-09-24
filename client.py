@@ -25,34 +25,17 @@ async def run():
 
                 print("Calling tool...")
                 result = await session.call_tool("get_memory", arguments={"key": "general tablet"})
-                result2= await session.call_tool("save_memory",arguments={"key":"my mcp worked!","value":"woohooo"})
+                result3= await session.call_tool("save_memory",arguments={"key":"user","value":"aranav"})
                 print("Tool result:", result)
+                print("Save result:", result3)
 
+                print("Listing prompts...")
+                prompts = await session.list_prompts()
+                print("Available prompts templates:", prompts)
 
-                # print("Listing resources...")
-                # resources = await session.list_resources()
-                # print("Available resources:", resources)
-
-                # print("Listing resources templates...")
-                # resources = await session.list_resource_templates()
-                # print("Available resource templates:", resources)
-
-                # print("Getting resource")
-                # resource = await session.read_resource("weather://statement")
-                # print(resource)
-
-                # print("Getting resource template")
-                # resource = await session.read_resource("weather://Vancouver/statement")
-                # print(resource)
-
-
-                # print("Listing prompts...")
-                # prompts = await session.list_prompts()
-                # print("Available prompts templates:", prompts)
-
-                # print("Prompt tool...")
-                # result = await session.get_prompt("get_prompt", arguments={"topic": "Water Cycle"})
-                # print("Prompt result:", result)
+                print("Prompt tool...")
+                result = await session.get_prompt("medical_response", arguments={"user_input": "Amoxistatin"})
+                print("Prompt result:", result)
 
 
 
