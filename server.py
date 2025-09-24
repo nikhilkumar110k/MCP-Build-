@@ -80,6 +80,21 @@ def get_medicine_info(query: str) -> str:
             )
     return search_web(query)
 
+@mcp.prompt(description="Generate a medical response based on user input and dataset information")
+def medical_response_prompt(user_input: str) -> str:
+    from server import get_medicine_info
+    dataset_info = get_medicine_info(user_input)
+    prompt_text = f"""
+User query: {user_input}
+
+Relevant medicine info: {dataset_info}
+
+Instruction: Using the above information, generate a detailed, easy-to-understand medical explanation. 
+Do not just repeat the text — explain it clearly, including uses, dosage,and precautions if possible.
+"""
+    return prompt_text
+
+
 @mcp.tool(description="Generate a medical response based on user input and dataset information")
 def medical_response(user_input: str) -> str:
     from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
@@ -88,17 +103,7 @@ def medical_response(user_input: str) -> str:
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
-    from server import get_medicine_info
-    dataset_info = get_medicine_info(user_input)
-
-    prompt_text = f"""
-User query: {user_input}
-
-Relevant medicine info: {dataset_info}
-
-Instruction: Using the above information, generate a detailed, easy-to-understand medical explanation. 
-Do not just repeat the text — explain it clearly, including uses, dosage, and precautions if possible.
-"""
+    prompt_text = medical_response_prompt(user_input)
 
     inputs = tokenizer(prompt_text, return_tensors="pt", truncation=True, padding="max_length", max_length=512)
     outputs = model.generate(**inputs, max_length=256, num_beams=5, early_stopping=True)

@@ -34,7 +34,7 @@ async def run():
                 print("Available prompts templates:", prompts)
 
                 llm_response = await session.call_tool("medical_response", arguments={"user_input": "goldman sachs?"})
-
+                
                 print("\nMedical Response:")
                 if llm_response.messages:
                     for msg in llm_response.messages:
