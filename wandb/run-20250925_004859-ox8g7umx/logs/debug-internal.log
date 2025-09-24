@@ -1,0 +1,7 @@
+{"time":"2025-09-25T00:48:59.5217419+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"D:\\BTM project\\wandb\\run-20250925_004859-ox8g7umx\\logs\\debug-core.log"}
+{"time":"2025-09-25T00:48:59.9912896+05:30","level":"INFO","msg":"created new stream","id":"ox8g7umx"}
+{"time":"2025-09-25T00:48:59.9912896+05:30","level":"INFO","msg":"stream: started","id":"ox8g7umx"}
+{"time":"2025-09-25T00:48:59.9912896+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ox8g7umx"}
+{"time":"2025-09-25T00:48:59.9912896+05:30","level":"INFO","msg":"sender: started","stream_id":"ox8g7umx"}
+{"time":"2025-09-25T00:48:59.9920174+05:30","level":"INFO","msg":"handler: started","stream_id":"ox8g7umx"}
+{"time":"2025-09-25T00:49:00.3934229+05:30","level":"INFO","msg":"Starting system monitor"}
