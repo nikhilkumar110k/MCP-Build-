@@ -86,7 +86,7 @@ def medical_response(user_input: str) -> str:
     
     tokenizer = AutoTokenizer.from_pretrained("./saved_model/finetuned-medicine")
     model = AutoModelForSeq2SeqLM.from_pretrained("./saved_model/finetuned-medicine")
-    
+
     from server import get_medicine_info
     dataset_info = get_medicine_info(user_input)
     
