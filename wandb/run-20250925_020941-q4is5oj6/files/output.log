@@ -1,0 +1,40 @@
+  0%|                                                                                                | 0/18750 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+                                                                                                                                                    
+{'loss': 3.6326, 'grad_norm': 1.1949331760406494, 'learning_rate': 2.92016e-05, 'epoch': 0.08}
+{'loss': 1.6846, 'grad_norm': 0.9872227311134338, 'learning_rate': 2.84016e-05, 'epoch': 0.16}
+{'loss': 1.3113, 'grad_norm': 0.932895302772522, 'learning_rate': 2.76016e-05, 'epoch': 0.24}
+{'loss': 1.1221, 'grad_norm': 0.9922868013381958, 'learning_rate': 2.68016e-05, 'epoch': 0.32}
+{'loss': 0.9897, 'grad_norm': 0.893165647983551, 'learning_rate': 2.6001600000000002e-05, 'epoch': 0.4}
+{'loss': 0.8961, 'grad_norm': 1.0522221326828003, 'learning_rate': 2.52016e-05, 'epoch': 0.48}
+{'loss': 0.817, 'grad_norm': 1.131082534790039, 'learning_rate': 2.44016e-05, 'epoch': 0.56}
+{'loss': 0.7629, 'grad_norm': 1.0510787963867188, 'learning_rate': 2.36016e-05, 'epoch': 0.64}
+{'loss': 0.7311, 'grad_norm': 0.8258661031723022, 'learning_rate': 2.2801600000000002e-05, 'epoch': 0.72}
+{'loss': 0.7029, 'grad_norm': 0.7868399024009705, 'learning_rate': 2.20016e-05, 'epoch': 0.8}
+{'loss': 0.6844, 'grad_norm': 0.89504075050354, 'learning_rate': 2.12016e-05, 'epoch': 0.88}
+{'loss': 0.6687, 'grad_norm': 0.8991490006446838, 'learning_rate': 2.0401599999999998e-05, 'epoch': 0.96}
+{'loss': 0.6626, 'grad_norm': 0.685794472694397, 'learning_rate': 1.9601600000000002e-05, 'epoch': 1.04}
+{'loss': 0.6538, 'grad_norm': 1.0983366966247559, 'learning_rate': 1.8801600000000003e-05, 'epoch': 1.12}
+{'loss': 0.645, 'grad_norm': 0.5965956449508667, 'learning_rate': 1.80016e-05, 'epoch': 1.2}
+{'loss': 0.6371, 'grad_norm': 0.9366205334663391, 'learning_rate': 1.72016e-05, 'epoch': 1.28}
+{'loss': 0.6344, 'grad_norm': 0.6584324240684509, 'learning_rate': 1.64016e-05, 'epoch': 1.36}
+{'loss': 0.6285, 'grad_norm': 0.8314720988273621, 'learning_rate': 1.56016e-05, 'epoch': 1.44}
+{'loss': 0.6277, 'grad_norm': 0.9097550511360168, 'learning_rate': 1.4801599999999999e-05, 'epoch': 1.52}
+{'loss': 0.6254, 'grad_norm': 0.7694911360740662, 'learning_rate': 1.4001600000000002e-05, 'epoch': 1.6}
+{'loss': 0.6215, 'grad_norm': 0.9431028366088867, 'learning_rate': 1.32016e-05, 'epoch': 1.68}
+{'loss': 0.6162, 'grad_norm': 0.5686841011047363, 'learning_rate': 1.24016e-05, 'epoch': 1.76}
+{'loss': 0.6183, 'grad_norm': 1.7234430313110352, 'learning_rate': 1.1601600000000001e-05, 'epoch': 1.84}
+{'loss': 0.6161, 'grad_norm': 0.46298760175704956, 'learning_rate': 1.08016e-05, 'epoch': 1.92}
+{'loss': 0.6115, 'grad_norm': 0.5239625573158264, 'learning_rate': 1.0001600000000001e-05, 'epoch': 2.0}
+{'loss': 0.609, 'grad_norm': 0.5781148672103882, 'learning_rate': 9.2016e-06, 'epoch': 2.08}
+{'loss': 0.6092, 'grad_norm': 0.7717178463935852, 'learning_rate': 8.4016e-06, 'epoch': 2.16}
+{'loss': 0.6114, 'grad_norm': 0.5323578715324402, 'learning_rate': 7.601599999999999e-06, 'epoch': 2.24}
+{'loss': 0.6082, 'grad_norm': 0.855022668838501, 'learning_rate': 6.8016e-06, 'epoch': 2.32}
+{'loss': 0.6066, 'grad_norm': 0.6130733489990234, 'learning_rate': 6.0016e-06, 'epoch': 2.4}
+{'loss': 0.6038, 'grad_norm': 0.47323617339134216, 'learning_rate': 5.2016e-06, 'epoch': 2.48}
+{'loss': 0.6061, 'grad_norm': 1.1910213232040405, 'learning_rate': 4.4015999999999995e-06, 'epoch': 2.56}
+{'loss': 0.6053, 'grad_norm': 0.5355852246284485, 'learning_rate': 3.6016e-06, 'epoch': 2.64}
+{'loss': 0.6049, 'grad_norm': 0.7004997730255127, 'learning_rate': 2.8016000000000004e-06, 'epoch': 2.72}
+{'loss': 0.6038, 'grad_norm': 0.6422878503799438, 'learning_rate': 2.0016e-06, 'epoch': 2.8}
+{'loss': 0.6046, 'grad_norm': 0.5726771950721741, 'learning_rate': 1.2016e-06, 'epoch': 2.88}
+{'loss': 0.6053, 'grad_norm': 0.6047224402427673, 'learning_rate': 4.016e-07, 'epoch': 2.96}
+{'train_runtime': 4230.6329, 'train_samples_per_second': 35.456, 'train_steps_per_second': 4.432, 'train_loss': 0.7941931510416667, 'epoch': 3.0}

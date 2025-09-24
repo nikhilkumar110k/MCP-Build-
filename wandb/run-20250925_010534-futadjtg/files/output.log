@@ -1,3 +1,32 @@
   0%|                                                                                                                                | 0/18750 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
-  5%|████▏                                                                                        | 852/18750 [03:03<1:05:54,  4.53it/s]                       
+ 82%|███████████████████████████████████████████████████████████████████               | 15331/18750 [1:03:03<12:04,  4.72it/s]                                
 {'loss': 3.6327, 'grad_norm': 1.1997333765029907, 'learning_rate': 2.92016e-05, 'epoch': 0.08}
+{'loss': 1.6807, 'grad_norm': 1.0212104320526123, 'learning_rate': 2.84016e-05, 'epoch': 0.16}
+{'loss': 1.3045, 'grad_norm': 0.9047983884811401, 'learning_rate': 2.76016e-05, 'epoch': 0.24}
+{'loss': 1.115, 'grad_norm': 0.9006344079971313, 'learning_rate': 2.68016e-05, 'epoch': 0.32}
+{'loss': 0.9848, 'grad_norm': 0.9360856413841248, 'learning_rate': 2.6001600000000002e-05, 'epoch': 0.4}
+{'loss': 0.8924, 'grad_norm': 0.9397164583206177, 'learning_rate': 2.52016e-05, 'epoch': 0.48}
+{'loss': 0.8162, 'grad_norm': 1.169227957725525, 'learning_rate': 2.44016e-05, 'epoch': 0.56}
+{'loss': 0.7619, 'grad_norm': 1.057523488998413, 'learning_rate': 2.36016e-05, 'epoch': 0.64}
+{'loss': 0.7318, 'grad_norm': 0.9130366444587708, 'learning_rate': 2.2801600000000002e-05, 'epoch': 0.72}
+{'loss': 0.7019, 'grad_norm': 0.8479810357093811, 'learning_rate': 2.20016e-05, 'epoch': 0.8}
+{'loss': 0.6843, 'grad_norm': 0.9091125130653381, 'learning_rate': 2.12016e-05, 'epoch': 0.88}
+{'loss': 0.6681, 'grad_norm': 0.8216928839683533, 'learning_rate': 2.0401599999999998e-05, 'epoch': 0.96}
+{'loss': 0.662, 'grad_norm': 0.6755911707878113, 'learning_rate': 1.9601600000000002e-05, 'epoch': 1.04}
+{'loss': 0.6532, 'grad_norm': 0.8044129014015198, 'learning_rate': 1.8801600000000003e-05, 'epoch': 1.12}
+{'loss': 0.6435, 'grad_norm': 0.6321929097175598, 'learning_rate': 1.80016e-05, 'epoch': 1.2}
+{'loss': 0.636, 'grad_norm': 0.7852935194969177, 'learning_rate': 1.72016e-05, 'epoch': 1.28}
+{'loss': 0.6325, 'grad_norm': 0.63432776927948, 'learning_rate': 1.64016e-05, 'epoch': 1.36}
+{'loss': 0.6282, 'grad_norm': 0.6466076374053955, 'learning_rate': 1.56016e-05, 'epoch': 1.44}
+{'loss': 0.6291, 'grad_norm': 0.8594788908958435, 'learning_rate': 1.4801599999999999e-05, 'epoch': 1.52}
+{'loss': 0.6255, 'grad_norm': 0.6488924622535706, 'learning_rate': 1.4001600000000002e-05, 'epoch': 1.6}
+{'loss': 0.621, 'grad_norm': 0.7218067646026611, 'learning_rate': 1.32016e-05, 'epoch': 1.68}
+{'loss': 0.615, 'grad_norm': 0.5785985589027405, 'learning_rate': 1.24016e-05, 'epoch': 1.76}
+{'loss': 0.6178, 'grad_norm': 0.5608912110328674, 'learning_rate': 1.1601600000000001e-05, 'epoch': 1.84}
+{'loss': 0.6162, 'grad_norm': 0.43240097165107727, 'learning_rate': 1.08016e-05, 'epoch': 1.92}
+{'loss': 0.611, 'grad_norm': 0.5210720300674438, 'learning_rate': 1.0001600000000001e-05, 'epoch': 2.0}
+{'loss': 0.6087, 'grad_norm': 0.5187537670135498, 'learning_rate': 9.2016e-06, 'epoch': 2.08}
+{'loss': 0.6075, 'grad_norm': 0.6511671543121338, 'learning_rate': 8.4016e-06, 'epoch': 2.16}
+{'loss': 0.6107, 'grad_norm': 0.6933086514472961, 'learning_rate': 7.601599999999999e-06, 'epoch': 2.24}
+{'loss': 0.6078, 'grad_norm': 0.5618789792060852, 'learning_rate': 6.8016e-06, 'epoch': 2.32}
+{'loss': 0.606, 'grad_norm': 0.5238116383552551, 'learning_rate': 6.0016e-06, 'epoch': 2.4}
