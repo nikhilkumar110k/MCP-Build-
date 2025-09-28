@@ -212,7 +212,7 @@ User query: {user_input}
 Relevant medicine info: {dataset_info}
 
 Instruction: Using the above information, generate a detailed, easy-to-understand medical explanation. 
-Including Name, dosage, Category and Strength if possible. also tell alternatives to the medicine if any.
+Do not just repeat the text — explain it clearly, including Name, dosage, Category and Strength if possible. also tell alternatives to the medicine if any.
 """
     return prompt_text
 
