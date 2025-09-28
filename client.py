@@ -31,18 +31,17 @@ async def run():
 
                 print("Listing prompts...")
                 prompts = await session.list_prompts()
+                resultprompt = await session.get_prompt("medical_response_prompt", arguments={"user_input": "calpol"})
+                print("Prompt result:", resultprompt)
                 print("Available prompts templates:", prompts)
 
-                llm_response = await session.call_tool("medical_response", arguments={"user_input": "goldman sachs?"})
+                llm_response = await session.call_tool("medical_response", arguments={"user_input": "calpol"})
                 
                 print("\nMedical Response:")
-                if llm_response.messages:
-                    for msg in llm_response.messages:
-                        print(msg.content.text)
+                if llm_response.content:
+                    print(llm_response.content)
                 else:
                     print("No response from LLM.")
-
-
 
     except Exception as e:
         print("An error occurred:")
